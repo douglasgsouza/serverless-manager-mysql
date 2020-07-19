@@ -1,0 +1,40 @@
+{
+    "name": "serverless-manager-mysql",
+    "version": "1.0.0",
+    "description": "MySQL connection manager for use in serverless applications.",
+    "author": "Douglas Gomes de Souza <douglasgsouza@gmail.com>",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/douglasgsouza/serverless-manager-mysql"
+    },
+    "homepage": "https://github.com/douglasgsouza/serverless-manager-mysql#readme",
+    "bugs": {
+        "url": "https://github.com/douglasgsouza/serverless-manager-mysql/issues"
+    },
+    "scripts": {
+        "prepublish": "tsc",
+        "build": "tsc"
+    },
+    "keywords": [
+        "serverless",
+        "mysql",
+        "pool",
+        "max_connections",
+        "scalability",
+        "rds",
+        "aurora serverless",
+        "aurora"
+    ],
+    "dependencies": {
+        "mysql": "^2.18.1"
+    },
+    "devDependencies": {
+        "typescript": "^3.9.7"
+    },
+    "optionalDependencies": {
+        "@types/mysql": "^2.15.15"
+    }
+}

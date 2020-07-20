@@ -1,3 +1,13 @@
+/**
+ * Serverless Manager for MySQL
+ * Serverless Manager for MySQL is a wrapper for mysql module that manage your mysql connections
+ * at serverless scale with transaction support and connection isolation.
+ *
+ * @author Douglas Gomes de Souza
+ * @version 1.0.1
+ * @licence MIT
+ */
+
 import * as MySQL from "mysql";
 import {EscapeFunctions, FieldInfo, OkPacket, Pool, PoolConfig, PoolConnection, QueryOptions} from 'mysql';
 // @ts-ignore
@@ -507,7 +517,7 @@ class ManagedTransaction {
     /**
      * Rollback transaction and release connection.
      */
-    async roollback(): Promise<void> {
+    async rollback(): Promise<void> {
         if (this.closed) {
             throw new Error('Transaction closed');
         }

@@ -1,6 +1,6 @@
 {
     "name": "serverless-manager-mysql",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "MySQL connection manager for use in serverless applications.",
     "author": "Douglas Gomes de Souza <douglasgsouza@gmail.com>",
     "license": "MIT",
@@ -18,6 +18,11 @@
         "prepublish": "tsc",
         "build": "tsc"
     },
+    "files": [
+        "LICENSE",
+        "README.md",
+        "dist/"
+    ],
     "keywords": [
         "serverless",
         "mysql",
